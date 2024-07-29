@@ -1,5 +1,6 @@
 {
     "name": "mathsgod/token-text-splitter",
+    "description": "A simple text splitter that uses a token to split text",
     "license": "MIT",
     "authors": [
         {

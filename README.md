@@ -1,6 +1,9 @@
 # Token Text Splitter
 
-This is a token text splitter. It splits the texts based on the token size.
+This is a token text splitter. It splits the texts based on the token size. It is useful for splitting the text for the token based models like GPT-3, GPT-4, etc. The splitter will split the text into chunks based on the token size and overlap. 
+
+Some written languages (e.g Chinese, Japanese) have characters which encode to 2 or more tokens. The splitter has a mechanism to ensure that the chunk is not split in the middle of the token. Each chunk will have wellformed Unicode characters.
+
 
 ## Installation
 
