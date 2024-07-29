@@ -26,7 +26,7 @@ $splitter = new TextSplitter\TokenTextSplitter("gpt-4o", 10, 5);
 
 $chunks = $splitter->splitText($text);
 
-print_R($chunks);
+print_r($chunks);
 
 
 ```
