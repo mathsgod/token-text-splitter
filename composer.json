@@ -9,6 +9,7 @@
         }
     ],
     "require": {
+        "ext-mbstring": "*",
         "yethee/tiktoken": "^0.5.1"
     },
     "autoload": {
