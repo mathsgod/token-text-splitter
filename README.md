@@ -22,9 +22,9 @@ $text = "蘋果公司（Apple Inc.）是美國的一家跨國科技公司，總�
 
 // token size is 10
 // overlap is 5
-$t = new TextSplitter\TokenTextSplitter("gpt-4o", 10, 5);
+$splitter = new TextSplitter\TokenTextSplitter("gpt-4o", 10, 5);
 
-$chunks = $t->splitText($text);
+$chunks = $splitter->splitText($text);
 
 print_R($chunks);
 
