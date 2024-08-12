@@ -32,6 +32,15 @@ class TokenTextSplitter
         while ($token_start < $token_length) {
 
             if ($token_start + $this->chunk_overlap >= $token_length) {
+                $t = $this->extractText($text, $tokens, $token_start, $text_start, $this->chunk_size);
+
+
+                if (count($chunks) == 0) {
+                    $chunks[] = $t["text"];
+                }
+
+
+
                 break;  //last chunk 
             }
 
